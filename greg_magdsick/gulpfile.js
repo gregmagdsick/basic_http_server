@@ -25,7 +25,7 @@ gulp.task('testEslint:testFile', () => {
 
 // references .eslintrc file
 gulp.task('testEslint:non-testFile', () => {
-  return gulp.src(['index.js', 'lib/**/*.js', 'gulp.js'])
+  return gulp.src(['index.js', 'lib/**/*.js', 'gulpfile.js'])
   .pipe(eslint({
     'env': {
       'node': true,
